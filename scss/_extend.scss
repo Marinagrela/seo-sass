@@ -1,0 +1,11 @@
+.primerEstilo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.segundoEstilo {
+  font-size: 20px;
+  color: #a4c2c1;
+  @extend .primerEstilo;
+}

@@ -1,0 +1,19 @@
+@mixin textos {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.textosEstilos {
+  @include textos;
+}
+
+@mixin sinparametro($pad, $alineacion, $tam) {
+  padding: $pad;
+  text-align: $alineacion;
+  font-size: $tam;
+}
+
+.sparametro {
+  @include sinparametro(2rem, center, 35px);
+}
